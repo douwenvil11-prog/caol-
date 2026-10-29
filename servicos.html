@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | Studio Minimal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #333; }
+        
+        header { position: fixed; top: 0; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.6); z-index: 1000; backdrop-filter: blur(10px); }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; color: #fff; font-weight: 700; }
+        nav a { color: #fff; text-decoration: none; margin-left: 30px; font-size: 14px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #d4af37; }
+
+        .page-header { height: 50vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: #fff; text-align: center; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 50px; }
+
+        .content { padding: 100px 5%; }
+        .content h2 { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 30px; text-align: center; }
+        
+        .lista-servicos { max-width: 800px; margin: 0 auto; }
+        .servico-item { background: #fff; padding: 40px; margin-bottom: 20px; border-left: 5px solid #d4af37; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .servico-item h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 10px; color: #222; }
+        .servico-item p { color: #666; font-size: 16px; }
+
+        footer { text-align: center; padding: 40px; background: #222; color: #aaa; font-size: 14px; }
+        footer a { color: #d4af37; text-decoration: none; }
+
+        @media (max-width: 768px) { nav { display: none; } .page-header h1 { font-size: 36px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Studio Minimal</div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="servicos.html" class="active">Serviços</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Nossos Serviços</h1>
+    </section>
+
+    <section class="content">
+        <div class="lista-servicos">
+            <div class="servico-item">
+                <h3>Projeto Arquitetônico</h3>
+                <p>Criação de projetos residenciais e comerciais, desde a planta baixa até a maquete 3D. Focado na funcionalidade e estética.</p>
+            </div>
+            <div class="servico-item">
+                <h3>Design de Interiores</h3>
+                <p>Planejamento de ambientes, escolha de mobiliário, iluminação e decoração. Transformamos sua casa em um refúgio personalizado.</p>
+            </div>
+            <div class="servico-item">
+                <h3>Consultoria e Acompanhamento</h3>
+                <p>Assessoria na compra de materiais e acompanhamento de obra para garantir a execução fiel do projeto original.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Studio Minimal. Todos os direitos reservados.</p>
+        <p><a href="https://wa.me/5500000000000">Solicitar Orçamento no WhatsApp</a></p>
+    </footer>
+</body>
+</html>
