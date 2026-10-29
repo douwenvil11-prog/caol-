@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Studio Minimal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #333; }
+        
+        header { position: fixed; top: 0; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.6); z-index: 1000; backdrop-filter: blur(10px); }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; color: #fff; font-weight: 700; }
+        nav a { color: #fff; text-decoration: none; margin-left: 30px; font-size: 14px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #d4af37; }
+
+        .page-header { height: 50vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: #fff; text-align: center; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 50px; }
+
+        .content { padding: 100px 5%; max-width: 900px; margin: 0 auto; }
+        .content h2 { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 30px; text-align: center; }
+        .content p { font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px; text-align: justify; }
+
+        footer { text-align: center; padding: 40px; background: #222; color: #aaa; font-size: 14px; }
+        footer a { color: #d4af37; text-decoration: none; }
+
+        @media (max-width: 768px) { nav { display: none; } .page-header h1 { font-size: 36px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Studio Minimal</div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html" class="active">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Nossa História</h1>
+    </section>
+
+    <section class="content">
+        <h2>Paixão por criar espaços únicos</h2>
+        <p>O Studio Minimal nasceu da vontade de unir a arquitetura contemporânea com a simplicidade do dia a dia. Acreditamos que um ambiente bem projetado tem o poder de transformar a vida das pessoas, trazendo mais bem-estar, harmonia e funcionalidade.</p>
+        <p>Com mais de 10 anos de experiência no mercado, nossa equipe de arquitetos e designers já assinou dezenas de projetos residenciais e comerciais. Nosso foco está nos detalhes: desde a escolha da iluminação correta até a textura do acabamento final.</p>
+        <p>Nosso compromisso é ouvir o cliente, entender suas necessidades e entregar um projeto que supere as expectativas, sempre com transparência e excelência em cada etapa da execução.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Studio Minimal. Todos os direitos reservados.</p>
+        <p><a href="https://wa.me/5500000000000">Fale Conosco pelo WhatsApp</a></p>
+    </footer>
+</body>
+</html>
