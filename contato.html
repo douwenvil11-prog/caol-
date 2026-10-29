@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Studio Minimal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #333; }
+        
+        header { position: fixed; top: 0; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.6); z-index: 1000; backdrop-filter: blur(10px); }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; color: #fff; font-weight: 700; }
+        nav a { color: #fff; text-decoration: none; margin-left: 30px; font-size: 14px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #d4af37; }
+
+        .page-header { height: 50vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: #fff; text-align: center; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 50px; }
+
+        .content { padding: 100px 5%; text-align: center; }
+        .content h2 { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 30px; }
+        .content p { font-size: 18px; color: #555; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        
+        .btn-whatsapp { background-color: #25D366; color: #fff; padding: 20px 50px; text-decoration: none; font-weight: 700; border-radius: 50px; font-size: 18px; display: inline-block; transition: 0.3s; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
+        .btn-whatsapp:hover { transform: scale(1.05); }
+
+        .info { margin-top: 60px; color: #777; }
+        .info p { margin-bottom: 10px; font-size: 16px; }
+
+        footer { text-align: center; padding: 40px; background: #222; color: #aaa; font-size: 14px; margin-top: 100px; }
+        footer a { color: #d4af37; text-decoration: none; }
+
+        @media (max-width: 768px) { nav { display: none; } .page-header h1 { font-size: 36px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Studio Minimal</div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Entre em Contato</h1>
+    </section>
+
+    <section class="content">
+        <h2>Vamos criar o seu projeto?</h2>
+        <p>Estamos prontos para tirar suas ideias do papel. Clique no botão abaixo para falar diretamente com um de nossos especialistas pelo WhatsApp.</p>
+        
+        <a href="https://wa.me/5500000000000" class="btn-whatsapp" target="_blank">Falar no WhatsApp</a>
+
+        <div class="info">
+            <p>📍 Av. Paulista, 1000 - São Paulo/SP</p>
+            <p>📞 (11) 99999-9999</p>
+            <p>✉️ contato@studiominimal.com.br</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Studio Minimal. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
