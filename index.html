@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Minimal | Arquitetura e Interiores</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #333; }
+        
+        /* MENU FIXO */
+        header { position: fixed; top: 0; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.6); z-index: 1000; backdrop-filter: blur(10px); }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; color: #fff; font-weight: 700; }
+        nav a { color: #fff; text-decoration: none; margin-left: 30px; font-size: 14px; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #d4af37; }
+        
+        /* HERO */
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: #fff; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 60px; margin-bottom: 20px; max-width: 800px; }
+        .hero p { font-size: 18px; margin-bottom: 40px; max-width: 600px; }
+        .btn { background-color: #d4af37; color: #fff; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: 600; transition: 0.3s; }
+        .btn:hover { background-color: #b5952f; }
+        
+        /* SEÇÃO DE DESTAQUES */
+        .destaques { padding: 100px 5%; text-align: center; }
+        .destaques h2 { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 50px; color: #222; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: left; }
+        .card h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 10px; }
+        
+        /* RODAPÉ */
+        footer { text-align: center; padding: 40px; background: #222; color: #aaa; font-size: 14px; }
+        footer a { color: #d4af37; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .hero h1 { font-size: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Studio Minimal</div>
+        <nav>
+            <a href="index.html" class="active">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Transformamos espaços em experiências.</h1>
+        <p>Projetos de arquitetura e design de interiores focados em elegância, conforto e minimalismo.</p>
+        <a href="contato.html" class="btn">Solicitar Orçamento</a>
+    </section>
+
+    <section class="destaques">
+        <h2>Nossos Pilares</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Design Autoral</h3>
+                <p>Cada projeto é único, pensado nos mínimos detalhes para refletir a personalidade do cliente.</p>
+            </div>
+            <div class="card">
+                <h3>Materiais Nobres</h3>
+                <p>Selecionamos os melhores acabamentos e texturas para trazer sofisticação e durabilidade.</p>
+            </div>
+            <div class="card">
+                <h3>Execução Impecável</h3>
+                <p>Acompanhamos a obra do início ao fim para garantir que o projeto saia exatamente como o planejado.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Studio Minimal. Todos os direitos reservados.</p>
+        <p><a href="https://wa.me/5500000000000">Fale Conosco pelo WhatsApp</a></p>
+    </footer>
+</body>
+</html>
